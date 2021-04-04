@@ -1,0 +1,100 @@
+@import 'style1024.css' screen and (min-width:1025px);
+@import 'style768.css' screen and (max-width: 1024px);
+@import 'style480.css' screen and (max-width: 768px);
+
+html, body {
+  margin: 0;
+}
+
+h1, h3, h5 {
+  margin: 0px;
+}
+
+blockquote {
+  padding-right: 5px;
+  text-align: justify;
+  font-size: 1em;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nestedGrid>* {
+  border-radius: 5px;
+  background-color: #d1d1d138;
+}
+
+.blog-entry {
+  height: 100%;
+  margin: 0px;
+  padding-left: 5px;
+  overflow: auto;
+}
+
+.my-header {
+  grid-area: hd;
+  display: table;
+  height: 100%;
+  padding-left: 10px;
+  background-color: darkgrey;
+  color: white;
+  border-radius: 5px;
+}
+
+.header-text {
+  display: table-cell;
+  vertical-align: middle;
+  font-weight: bold;
+  font-family: 'Courier New', monospace;
+  padding-left: 5px;
+}
+
+.my-footer {
+  grid-area: ft;
+  display: table;
+  height: 100%;
+  background-color: rgb(233, 225, 241);
+}
+
+.footer-text {
+  display: table-cell;
+  vertical-align: middle;
+  font-family: 'Courier New', monospace;
+  padding-left: 5px;
+  text-align: center;
+}
+
+.content-source {
+  margin: 0px;
+  padding-left: 10px;
+  height: 10%;
+  min-height: 20px;
+  display: block;
+  align-items: center;
+}
+
+.sidebar {
+  grid-area: sd;
+  padding-left: 5px;
+  overflow: auto;
+}
+
+.sidebar-header {
+  padding-left: 10px;
+}
+
+.content {
+  grid-area: main;
+}
+
+.card-image {
+  max-width: 100%;
+  max-height: 25%;
+}
+.author-name {
+  font-style: italic;
+  margin: 0px;
+  font-size: 0.9em;
+}

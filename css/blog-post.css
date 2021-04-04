@@ -1,0 +1,110 @@
+.container-flex {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.my-header {
+    padding-left: 10px;
+    background-color: darkgrey;
+    color: white;
+    border-radius: 5px;
+}
+
+.header-text {
+    font-weight: bold;
+    font-family: 'Courier New', monospace;
+    padding-left: 5px;
+    color: white;
+}
+
+.footer {
+    background-color: rgb(233, 225, 241);
+}
+
+.footer>h4 {
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    width: 100%;
+    padding-top: 3px;
+}
+
+a {
+    text-decoration: none;
+}
+
+figcaption {
+    text-align: center;
+    width: 100%;
+}
+
+.post-title {
+    text-align: center;
+    width: 100%;
+}
+
+.post-image {
+    width: 100%;
+}
+
+.post-author {
+    text-align: center;
+    width: 100%;
+    font-style: italic;
+    font-weight: bold;
+}
+
+p {
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+h5 {
+    text-align: center;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+h6 {
+    text-align: center;
+    width: 100%;
+}
+
+.home-icon {
+    height: 30px;
+    margin-right: 7px;
+    margin-bottom: 7px;
+}
+
+.share {
+    float: right;
+}
+
+.navigation {
+    margin-right: auto;
+}
+
+.nav-button {
+    font-size: 0.8em;
+}
+
+.controls {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.facebook-button {
+    vertical-align: top;
+    height: 27px;
+}
+
+.ig-button {
+    vertical-align: top;
+    max-height: 32px;
+}

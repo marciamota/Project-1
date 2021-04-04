@@ -1,0 +1,187 @@
+/* Main elements */
+body {
+	background-image: url(../images/concrete_seamless.png);
+	font-family: 'Fresca', sans-serif;
+	text-align: center;
+	color: #333;
+}
+
+header {
+	margin: 0 0 15px 0;
+	text-align: center;
+}
+
+h1 {
+	font-size: 64px;
+}
+
+h2 {
+	font-size: 40px;
+}
+
+h3,
+h4 {
+	font-size: 32px;
+	margin: 10px;
+}
+
+p {
+	margin: 0 0 30px 0;
+}
+
+/* Anchor Elements */
+a,
+a:hover {
+	color: #333;
+	text-decoration: none;
+	font-size: 18px;
+	padding: 15px 0;
+}
+
+a:hover span {
+	color: #b20828;
+}
+
+/* Images & Image Effects */
+.title-logo {
+	max-height: 120px;
+	max-width: 120px;
+	padding: 10px 0 0 0;
+}
+
+.short-fade {
+	-webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.shadow {
+  	-webkit-box-shadow: 5px 6px 3px -1px rgba(0,0,0,0.47);
+	-moz-box-shadow: 5px 6px 3px -1px rgba(0,0,0,0.47);
+	box-shadow: 5px 6px 3px -1px rgba(0,0,0,0.47);
+}
+
+/* Gray */
+/*! Gray v1.4.2 (https://github.com/karlhorky/gray) | MIT */
+.grayscale {
+  /* Firefox 10-34 */
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='saturate' values='0'/></filter></svg>#grayscale");
+
+  /*
+    Chrome 19+,
+    Safari 6+,
+    Safari 6+ iOS,
+    Opera 15+
+  */
+  -webkit-filter: grayscale(1);
+
+  /* Firefox 35+ */
+  filter: grayscale(1);
+
+  /* IE 6-9 */
+  filter: gray;
+}
+
+.grayscale.grayscale-fade {
+  transition: filter 1s;
+}
+
+/* Webkit hack until filter is unprefixed */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .grayscale.grayscale-fade {
+    -webkit-transition: -webkit-filter 1s;
+    transition:         -webkit-filter 1s;
+  }
+}
+
+.grayscale.grayscale-off,
+.grayscale.grayscale-fade:hover {
+  -webkit-filter: grayscale(0);
+  filter:         grayscale(0);
+}
+
+/* Background element */
+.grayscale.grayscale-replaced {
+  -webkit-filter: none;
+  filter:         none;
+}
+
+.grayscale.grayscale-replaced > svg {
+  -webkit-transition: opacity 1s ease;
+  transition:         opacity 1s ease;
+  opacity: 1;
+}
+
+.grayscale.grayscale-replaced.grayscale-off > svg,
+.grayscale.grayscale-replaced.grayscale-fade:hover > svg {
+  opacity: 0;
+}
+
+/* Spacing */
+.my-container {
+	max-width: 1000px;
+}
+
+.no-margin {
+	margin: 0px;
+}
+
+/* Fonts & Colors */
+.turn-green {
+	color: #05b224;
+}
+
+.turn-red {
+	color: #b20828;
+}
+
+/* Media Query - Small Breakpoint */
+@media screen and (max-width: 588px)
+{
+	h1 {
+		font-size: 40px;
+		text-align: center;
+	}
+
+	h2,
+	h3 {
+		font-size: 32px;
+		text-align: center;
+	}
+
+	.title-logo {
+		max-height: 100px;
+		max-width: 100px;
+		margin: auto;
+	}
+}
+
+/* Media Query - Medium Breakpoint */
+@media screen and (min-width: 589px) and (max-width: 767px)
+{
+	h1 {
+		font-size: 64px;
+		text-align: center;
+	}
+
+	h2,
+	h3,
+	h4 {
+		text-align: center;
+	}
+
+	.title-logo {
+		margin: auto;
+	}
+}
+
+/* Media Query - Large Breakpoint */
+@media screen and (min-width: 768px) and (max-width: 991px)
+{
+	h1,
+	h3 {
+		text-align:right;
+	}
+}

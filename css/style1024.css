@@ -1,0 +1,24 @@
+html, body {
+    height: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 10% 85% 5%;
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd hd" 
+    "sd main main main main main main main main" 
+    "ft ft ft ft ft ft ft ft ft";
+    height: 100%;
+}
+
+.nestedGrid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 100%;
+    grid-gap: 5px;
+    padding: 10px;
+    height: 90%;
+    box-sizing: border-box;
+}
